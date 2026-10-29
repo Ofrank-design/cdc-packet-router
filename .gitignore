@@ -1,0 +1,12 @@
+build/
+*.o
+*.cf
+*.vcd
+*.ghw
+*.fst
+*.log
+*.jou
+*.str
+.Xil/
+vivado*.backup.*
+work-obj*.cf
