@@ -1,0 +1,13 @@
+rtl/packages/router_types_pkg.vhd
+rtl/cdc/cdc_bit_sync.vhd
+rtl/cdc/cdc_gray_sync.vhd
+rtl/cdc/reset_sync.vhd
+rtl/fifo/async_fifo.vhd
+rtl/router/packet_ingress.vhd
+rtl/router/packet_egress.vhd
+rtl/router/packet_router.vhd
+tb/tb_util_pkg.vhd
+tb/cdc_bit_sync_tb.vhd
+tb/reset_sync_tb.vhd
+tb/async_fifo_tb.vhd
+tb/packet_router_tb.vhd
