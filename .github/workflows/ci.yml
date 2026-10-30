@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install GHDL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ghdl
+          ghdl --version
+
+      - name: Regression (all scenarios)
+        run: make test
+
+      - name: Mutation check (benches must fail on broken RTL)
+        run: make mutate
+
+      - name: Synthesizability check
+        run: make synth-check

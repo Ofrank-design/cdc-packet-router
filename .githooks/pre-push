@@ -1,0 +1,4 @@
+#!/bin/sh
+# Don't push a red tree. Enable with: git config core.hooksPath .githooks
+echo "pre-push: running regression..."
+make test || { echo "pre-push: regression failed, push aborted"; exit 1; }
