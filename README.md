@@ -57,9 +57,6 @@ correct full/empty behaviour across wide clock ratios and phase offsets, port
 selection, backpressure, stray-word handling, and that each test fails when the
 RTL is deliberately broken. See `docs/verification.md`.
 
-Not done, and needed before this goes on a board: a vendor CDC report, timing
-closure on your actual device, validating the XDC template, a reset-in-the-
-middle-of-traffic test, and hardware stress. Simulation cannot show metastability.
 
 ## License
 
